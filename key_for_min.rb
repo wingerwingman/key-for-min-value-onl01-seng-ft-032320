@@ -3,14 +3,15 @@
 
 def key_for_min_value(name_hash)
   num = 0
+  if name_hash == {}
+    nil 
+  end
   name_hash.collect do |key, value|
   num = value
   if value > value
     num = value
-  elsif
-    key
   else
-    return nil
+    key
   end
 end
 end
